@@ -1,0 +1,2 @@
+class FoliosController < ApplicationController
+end
