@@ -34,9 +34,13 @@ class FoliosController < ApplicationController
     end
   end
 
+  def show
+    @folio_item = Folio.find(params[:id])
+  end
+  
   private
 
   def folio_item_params
-    params.require(:folio).permit(:title, :subtitle, :body)
+    params.require(:folio).permit(:title, :subtitle, :body, :thumb_image, :main_image)
   end
 end
