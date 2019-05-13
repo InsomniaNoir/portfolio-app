@@ -37,7 +37,20 @@ class FoliosController < ApplicationController
   def show
     @folio_item = Folio.find(params[:id])
   end
-  
+
+  def destroy
+    # Perform the lookup
+    @folio_item = Folio.find(params[:id])
+
+    # Destroy/Delete the record
+    @folio_item.destroy
+
+    # Redirect
+    respond_to do |format|
+      format.html { redirect_to folios_url, notice: 'Your portfolio was successfully deleted.' }
+    end
+  end
+
   private
 
   def folio_item_params
