@@ -55,6 +55,10 @@ class FoliosController < ApplicationController
   private
 
   def folio_item_params
-    params.require(:folio).permit(:title, :subtitle, :body, :technologies_attributes [:name])
+    params.require(:folio).permit(:title,
+                                  :subtitle,
+                                  :body,
+                                  :technologies_attributes [:name]
+                                )
   end
 end
