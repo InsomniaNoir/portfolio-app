@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :folios, except: [:show]
   get 'folio/:id', to: 'folios#show', as: 'folio_show'
 
