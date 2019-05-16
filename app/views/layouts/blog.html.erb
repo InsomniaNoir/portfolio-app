@@ -26,7 +26,7 @@
     <%= yield %>
 
     <!-- Navigation Links -->
-    <%= render "shared/nav" %>
+    <%= render "shared/nav", location: "bottom" %>
 
     <!-- Source Check -->
     <% if session[:source] %>

@@ -1,5 +1,6 @@
 class FoliosController < ApplicationController
-  layout 'folios'
+  layout 'folio'
+
   def index
     @folio_items = Folio.all
   end
@@ -24,6 +25,7 @@ class FoliosController < ApplicationController
 
   def edit
     @folio_item = Folio.find(params[:id])
+    3.times { @folio_item.technologies.build }
   end
 
   def update
