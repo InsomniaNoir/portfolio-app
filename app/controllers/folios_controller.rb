@@ -1,4 +1,5 @@
 class FoliosController < ApplicationController
+  layout 'folios'
   def index
     @folio_items = Folio.all
   end

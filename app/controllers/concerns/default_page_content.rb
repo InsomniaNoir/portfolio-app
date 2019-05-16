@@ -1,5 +1,5 @@
 module DefaultPageContent
-  extend ActiveRecord::Concern
+  extend ActiveSupport::Concern
 
   included do
     before_action :set_page_defaults
