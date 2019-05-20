@@ -1,4 +1,5 @@
 class FoliosController < ApplicationController
+  before_action :set_folio_items, only: [:edit, :update, :show, :destroy]
   layout 'folio'
 
   def index
@@ -24,7 +25,6 @@ class FoliosController < ApplicationController
   end
 
   def edit
-    @folio_item = Folio.find(params[:id])
     3.times { @folio_item.technologies.build }
   end
 
@@ -39,12 +39,10 @@ class FoliosController < ApplicationController
   end
 
   def show
-    @folio_item = Folio.find(params[:id])
+
   end
 
   def destroy
-    # Perform the lookup
-    @folio_item = Folio.find(params[:id])
 
     # Destroy/Delete the record
     @folio_item.destroy
@@ -63,5 +61,9 @@ class FoliosController < ApplicationController
                                   :body,
                                   :technologies_attributes [:name]
                                 )
+  end
+
+  def set_folio_items
+    @folio_item = Folio.find(params[:id])
   end
 end
