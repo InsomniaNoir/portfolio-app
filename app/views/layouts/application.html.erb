@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<<<<<<< HEAD
     
+=======
+>>>>>>> 977b5321d2b4e3cce4d95fe96d74e5a8234525e1
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,18 +18,21 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <!-- Navigation Links -->
+          <%= render "shared/application_nav" %>
 
-    <!-- Navigation Links -->
-    <%= render "shared/nav", location: "top" %>
+          <%= login_helper %>
 
-    <%= login_helper %>
+          <%= yield %>
 
-    <%= yield %>
+          <%= copyright_generator %>
 
-    <%= copyright_generator %>
-
-    <%= source_helper("application") %>
+          <%= source_helper("application") %>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
