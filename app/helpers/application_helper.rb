@@ -17,4 +17,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    InsomniaViewTool::Renderer.copyright 'InsomniaNoir', 'All Rights Reserved'
+  end
 end
