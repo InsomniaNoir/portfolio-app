@@ -1,24 +1,27 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2">
+    <!-- Contact Information -->
+    <div class="col-md-6">
+      <h1>Talk to me</h1>
+      <h3><u>Home:</u></h3>
+      <p>Omaha, NE</p>
+
+      <h3><u>Twitter:</u></h3>
+      <p>@CoffinBuilder</p>
+
+      <h3><u>Instagram:</u></h3>
+      <p>@St_Simulacra</p>
+
+      <h3><u>Discord:</u></h3>
+      <p>#3952</p>
+
+      <h3><u>E-mail:</u></h3>
+      <p><%= mail_to 'jrshafer@mac.com', 'E-mail me', subject: 'For InsomniaNoir' %></p>
+    </div>
+    <!-- Quasi-profound profile picture -->
+    <div class="col-md-6">
+      <%= image_tag "ProfileImage.jpg", class: 'img-fluid' %>
     </div>
 
-      <div class="col-md-auto" align="center">
-        <h1>Talk to me</h1>
-        <h3>Home:</h3>
-        <p>Omaha, NE</p>
-
-        <h3>Twitter:</h3>
-        <p>@CoffinBuilder</p>
-
-        <h3>Instagram:</h3>
-        <p>@St_Simulacra</p>
-
-        <h3>E-mail:</h3>
-        <p><a href="mailto:jrshafer@mac.com">E-mail me</a></p>
-      </div>
-
-    <div class="col-md-2">
-    </div>
   </div>
 </div>
