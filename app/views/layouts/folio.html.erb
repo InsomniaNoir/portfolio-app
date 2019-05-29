@@ -15,7 +15,7 @@
 
   <body>
     <%= render 'shared/folio_nav' %>
-    <%= render 'shared/folio_header' %>
+    <%= render 'shared/folio_header' unless logged_in?(:site_admin) %>
 
     <%= yield %>
 
