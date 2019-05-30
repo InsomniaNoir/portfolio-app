@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,15 +14,12 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <!-- Navigation Links -->
-    <%= login_helper('nav-link') %>
-    <%= render "shared/nav", location: "top" %>
+    <%= render 'shared/folio_nav' %>
+    <%= render 'shared/folio_header' unless logged_in?(:site_admin) %>
 
     <%= yield %>
 
+    <%= render 'shared/folio_footer' %>
     <%= source_helper("application") %>
   </body>
 </html>
