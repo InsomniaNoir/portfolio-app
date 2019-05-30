@@ -4,7 +4,7 @@ class FoliosController < ApplicationController
   layout 'folio'
 
   def index
-    @folio_items = Folio.all
+    @folio_items = Folio.by_position
   end
 
   def new
