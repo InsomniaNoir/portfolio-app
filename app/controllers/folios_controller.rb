@@ -7,6 +7,14 @@ class FoliosController < ApplicationController
     @folio_items = Folio.by_position
   end
 
+  def sort
+    params[:order].each do |key, value|
+      folio.find(value[:id]).update(position: value[:position])
+    end
+
+    render nothing: true
+  end
+
   def new
     @folio_item = Folio.new
     3.times { @folio_item.technologies.build }
