@@ -1,6 +1,6 @@
 <div class="col-md-4">
   <div class="card mb-4 box-shadow" data-id="<%= folio_item.id %>">
-    <%= image_tag folio_item.thumb_image, class: "card-img-top" unless folio_item.thumb_image.nil? %>
+    <%= image_tag folio_item.thumb_image.url, class: "card-img-top" unless folio_item.thumb_image.url.nil? %>
     <div class="card-body">
       <p class="card-text">
         <span><%= link_to folio_item.title, folio_show_path(folio_item.id) %></span> <%= folio_item.subtitle %>
