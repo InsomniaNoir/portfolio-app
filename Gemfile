@@ -17,7 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -65,3 +65,4 @@ gem 'insomnia_view_tool', git: 'https://github.com/InsomniaNoir/insomnia_view_to
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5' # Restart Server after install
 gem 'kaminari', '~> 1.1', '>= 1.1.1' # Restart server after install
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
