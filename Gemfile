@@ -7,6 +7,8 @@ ruby '2.6.2'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
+# moved for call requirements
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.2', require: 'dotenv/rails-now'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -69,4 +71,3 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'carrierwave-aws', '~> 1.3'
-gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'

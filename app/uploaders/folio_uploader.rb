@@ -1,7 +1,7 @@
 class FolioUploader < CarrierWave::Uploader::Base
 
   # Kind of storage to use for this uploader:
-  storage :file
+  storage :aws
 
   # Where uploaded files will be stored.
   def store_dir
