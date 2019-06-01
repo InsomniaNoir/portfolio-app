@@ -154,6 +154,8 @@ body {
   background-size: cover;
 }
 
+// About-me page styles
+
 .about-me {
   display: block;
   border-radius: 50%;
@@ -168,6 +170,27 @@ body {
   height: 550px;
   width: 500px;
   padding: 10px 20px 100px 20px;
+}
+
+.contact-image {
+  display: block;
+  border-radius: 50%;
+  border: 5px solid;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  height: auto;
+}
+// Contact page styles
+
+
+.transbox-contact {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  border: 3px solid;
+  height: 550px;
+  width: 300px;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .app-footer {
