@@ -7,6 +7,8 @@ ruby '2.6.2'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
+# moved for call requirements
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.2', require: 'dotenv/rails-now'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -66,3 +68,6 @@ gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5' # Restart Server after install
 gem 'kaminari', '~> 1.1', '>= 1.1.1' # Restart server after install
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+gem 'carrierwave-aws', '~> 1.3'
