@@ -45,7 +45,7 @@ body {
 }
 
 .cover-container {
-  max-width: 60rem;
+  max-width: 65rem;
 }
 
 
@@ -182,7 +182,6 @@ body {
 }
 // Contact page styles
 
-
 .transbox-contact {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10%;
@@ -195,4 +194,18 @@ body {
 
 .app-footer {
   color: white;
+}
+
+// Twitter funcitonality
+.my-tweets {
+  color: black;
+  margin: 20px;
+}
+
+.my-tweets a {
+  color: gray;
+}
+
+.my-tweets > .card {
+  padding: 30px;
 }
