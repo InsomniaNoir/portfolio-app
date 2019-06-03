@@ -43,6 +43,10 @@ module ApplicationHelper
         url: contact_path,
         title: "Contact Me"
       },
+      {
+        url: my_tweets_path,
+        title: "Tweets"
+      },
     ]
   end
 
