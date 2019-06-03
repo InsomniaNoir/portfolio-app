@@ -9,14 +9,13 @@ jQuery(document).on 'turbolinks:load', ->
     disconnected: ->
     received: (data) ->
       comments.append data['comment']
-    send_comments: (comment, blog_id) ->
+    send_comment: (comment, blog_id) ->
       @perform 'send_comment', comment: comment, blod_id: blog_id
   $('#new_comment').on 'ajax:before', (e) ->
     $this = $(this)
     textarea = $this.find('#comment_content')
     if $.trim(textarea.val()).length > 1
       App.global_chat.send_comment textarea.val(),
-      comments.data('blog_id')
+      comments.data('blog-id')
       textarea.val('')
-    e.preventDefault()
-    return false
+    stopEverything(e)
