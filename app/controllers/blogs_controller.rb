@@ -15,8 +15,11 @@ class BlogsController < ApplicationController
   end
 
   def show
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
+    if logged_in?(:site_admin) || @blog.published?
+      @page_title = @blog.title
+      @seo_keywords = @blog.body
+    else
+      redirect_to blogs_path, notice: "You are not authorized to access this page"
   end
 
   def new
