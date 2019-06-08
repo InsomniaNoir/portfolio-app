@@ -1,6 +1,51 @@
 <div class="row">
   <div class="col-md-5">
     <%= image_tag 'ProfileImage.jpg', width: 300, class: 'about-me', alt: "profile image" %>
+    <div>
+      <button
+        class="btn btn-dark btn-block"
+        type="button"
+        data-toggle="collapse"
+        data-target="#jobHistory"
+        aria-expanded="false"
+        aria-controler="jobHistory"
+      >
+        Job History
+      </button>
+
+      <button
+        class="btn btn-dark btn-block"
+        type="button"
+        data-toggle="collapse"
+        data-target="#education"
+        aria-expanded="false"
+        aria-controler="education"
+      >
+        Education
+      </button>
+
+      <div class="collapse" id="jobHistory">
+        <div class="card card-block">
+          Job 1
+        </div>
+        <div class="card card-block">
+          Job 2
+        </div>
+        <div class="card card-block">
+          Job 3
+        </div>
+      </div>
+
+      <div class="collapse" id="education">
+        <div class="card card-block">
+          School 1
+        </div>
+        <div class="card card-block">
+          School 2
+        </div>
+      </div>
+
+    </div>
   </div>
   <div class="col-md-7">
     <div class="transbox">
