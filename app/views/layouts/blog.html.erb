@@ -15,9 +15,7 @@
 
   <body>
     <div class="container">
-    <!-- <%= login_helper %> -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      
       <!-- Blog Header -->
       <%= render 'shared/blog_masthead' %>
       <%= render 'shared/blog_nav' %>
@@ -38,8 +36,6 @@
       <div class="row">
 
         <%= yield %>
-
-        <%= source_helper("blog") %>
 
         <!-- Sidebar -->
         <%= render 'shared/blog_sidebar' %>
