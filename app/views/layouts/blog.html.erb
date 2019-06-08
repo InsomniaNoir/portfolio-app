@@ -9,15 +9,17 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>">
 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="container">
-    <%= login_helper %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
       <!-- Blog Header -->
       <%= render 'shared/blog_masthead' %>
       <%= render 'shared/blog_nav' %>
@@ -38,8 +40,6 @@
       <div class="row">
 
         <%= yield %>
-
-        <%= source_helper("blog") %>
 
         <!-- Sidebar -->
         <%= render 'shared/blog_sidebar' %>

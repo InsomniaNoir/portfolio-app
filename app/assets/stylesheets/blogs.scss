@@ -4,6 +4,12 @@
 
 /* stylelint-disable selector-list-comma-newline-after */
 
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
@@ -141,4 +147,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-links {
   font-size: 2em;
+}
+
+// Blog Breadcrumb styling
+.arr-right .breadcrumb-item+.breadcrumb-item::before {
+  content: "›";
+  vertical-align:top;
+  color: #B9B9B9;
+  font-size:35px;
+  line-height:18px;
+
+}
+
+// Blog admin actions styles
+.blogcrumb .breadcrumb-item+.breadcrumb-item::before {
+  content: none;
+}
+
+.blogcrumb li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.25em;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
 }
