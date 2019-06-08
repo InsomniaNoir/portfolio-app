@@ -14,7 +14,6 @@
 //= require activestorage
 //= require jquery-ui
 //= require html.sortable
-//= require turbolinks
 //= require jquery3
 //= require popper
 //= require_tree .
