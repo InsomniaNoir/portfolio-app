@@ -58,7 +58,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
-gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise', '~> 4.7'
 gem 'bootstrap', '~> 4.3.1' # Restart server after install
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'insomnia_view_tool', git: 'https://github.com/InsomniaNoir/insomnia_view_tool'
