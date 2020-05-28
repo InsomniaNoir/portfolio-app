@@ -64,7 +64,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'insomnia_view_tool', git: 'https://github.com/InsomniaNoir/insomnia_view_tool'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5' # Restart Server after install
-gem 'kaminari', '~> 1.1', '>= 1.1.1' # Restart server after install
+gem 'kaminari', '~> 1.2' # Restart server after install
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
