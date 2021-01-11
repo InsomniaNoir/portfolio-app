@@ -70,7 +70,7 @@ gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'twitter', '~> 6.2'
-gem 'redcarpet', '~> 3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 
 ruby '2.6.2'
